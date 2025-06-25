@@ -11,13 +11,13 @@ from sklearn.metrics import accuracy_score, classification_report
 df = pd.read_csv("C:\\Users\\ranat\\OneDrive\\Desktop\\Summer Training\\Datasets\\Iris.csv")
 
 # Basic Insights
-print(df)
-print(df.info())
-print(df.describe())
-print(df.head(10))
-print("No. of Rows and Columns", df.shape)
-print("Total Value Count of each variable", df.count())
-print(df.nunique())
+print("Dataframe:", df)
+print("Info :",df.info())
+print("Describe :",df.describe())
+print("Top 10 rows",df.head(10))
+print("No. of Rows and Columns "", df.shape)
+print("Total Value Count of each variable :", df.count())
+print("No. of Unique Values :",df.nunique())
 print(df.isnull().sum())
 duplicates = df[df.duplicated()]
 print(duplicates)
